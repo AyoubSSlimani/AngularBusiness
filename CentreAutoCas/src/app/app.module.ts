@@ -5,10 +5,35 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MentionComponent } from './mention/mention.component';
+import { ConditionComponent } from './condition/condition.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { PolitiqueComponent } from './politique/politique.component';
+import { PlanComponent } from './plan/plan.component';
+import { AproposComponent } from './apropos/apropos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MentionComponent,
+    ConditionComponent,
+    AccueilComponent,
+    PolitiqueComponent,
+    PlanComponent,
+    AproposComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    CarouselModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
