@@ -14,6 +14,7 @@ import { AproposComponent } from './apropos/apropos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
